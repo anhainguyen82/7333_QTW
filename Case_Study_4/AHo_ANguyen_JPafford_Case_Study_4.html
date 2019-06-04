@@ -13560,6 +13560,30 @@ urlsWomen <span class="o">=</span> <span class="kp">paste</span><span class="p">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Count-of-Women-By-Age">Count of Women By Age<a class="anchor-link" href="#Count-of-Women-By-Age">&#182;</a></h5><p><img src="CountByAge.png" alt="title"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Count-of-Women-By-Race-Year">Count of Women By Race Year<a class="anchor-link" href="#Count-of-Women-By-Race-Year">&#182;</a></h5><p><img src="CountByYear.png" alt="title"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Mean-Age-By-Year">Mean Age By Year<a class="anchor-link" href="#Mean-Age-By-Year">&#182;</a></h5><p><img src="MeanAgeByYear.png" alt="title"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="4-Results">4 Results<a class="anchor-link" href="#4-Results">&#182;</a></h2>
 </div>
 </div>
@@ -13567,14 +13591,35 @@ urlsWomen <span class="o">=</span> <span class="kp">paste</span><span class="p">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="**-Add-header(20)-for-one-of-the-cleaned-DFs.">** Add header(20) for one of the cleaned DFs.<a class="anchor-link" href="#**-Add-header(20)-for-one-of-the-cleaned-DFs.">&#182;</a></h2>
+<p>An example of the Final Combined Women's Race Times from 1999-2012 can be found below.</p>
+<h5 id="Final-Combined-File-of-Women-Race-Times---1999-2012">Final Combined File of Women Race Times - 1999-2012<a class="anchor-link" href="#Final-Combined-File-of-Women-Race-Times---1999-2012">&#182;</a></h5><p><img src="WomenFinalTXT.png" alt="title"></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Final-Combined-File-of-Women-Race-Times---1999-2012">Final Combined File of Women Race Times - 1999-2012<a class="anchor-link" href="#Final-Combined-File-of-Women-Race-Times---1999-2012">&#182;</a></h5><p><img src="WomenFinalTXT.png" alt="title"></p>
+<p>While investigating the women's race results, we found that the dispersment of run times and age are pretty standard across all year (1999-2012).</p>
+<h5 id="Women's-Races-from-1999-2012:-Age,-RunTime,-Year">Women's Races from 1999-2012: Age, RunTime, Year<a class="anchor-link" href="#Women's-Races-from-1999-2012:-Age,-RunTime,-Year">&#182;</a></h5><p><img src="YearRunTimeAge.png" alt="title"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is a gradual upward trend on the run times as the age increases.</p>
+<h5 id="Run-Time-By-Age-(in-10-year-bins)">Run Time By Age (in 10 year bins)<a class="anchor-link" href="#Run-Time-By-Age-(in-10-year-bins)">&#182;</a></h5><p><img src="RunTimeByAgeBin.png" alt="title"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, The highest concentration of runtimes appears between the ages of 22-32 years old with a run time between 90-110 minutes</p>
+<h5 id="Run-Time-by-Age">Run Time by Age<a class="anchor-link" href="#Run-Time-by-Age">&#182;</a></h5><p><img src="RunTimeByAge.png" alt="title"></p>
 
 </div>
 </div>
@@ -14455,7 +14500,7 @@ AYQEkABCAkgAIQEkgJAAEkBIAAkgJIAEEBJAAv4HPgQRn376HmgAAAAASUVORK5CYII="
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>ggplot<span class="p">(</span>data <span class="o">=</span> cbWomen<span class="p">)</span> <span class="o">+</span> geom_bar<span class="p">(</span>mapping <span class="o">=</span> aes<span class="p">(</span>x<span class="o">=</span>year<span class="p">))</span> <span class="o">+</span> ggtitle<span class="p">(</span><span class="s">&quot;Plot of women contestants for each year&quot;</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span>CountByYear <span class="o">&lt;-</span> ggplot<span class="p">(</span>data <span class="o">=</span> cbWomen<span class="p">)</span> <span class="o">+</span> geom_bar<span class="p">(</span>mapping <span class="o">=</span> aes<span class="p">(</span>x<span class="o">=</span>year<span class="p">))</span> <span class="o">+</span> ggtitle<span class="p">(</span><span class="s">&quot;Plot of women contestants for each year&quot;</span><span class="p">)</span> <span class="o">+</span>
   xlab<span class="p">(</span><span class="s">&quot;Year&quot;</span><span class="p">)</span> <span class="o">+</span> ylab<span class="p">(</span><span class="s">&quot;Number of runners&quot;</span><span class="p">)</span>
 </pre></div>
 
